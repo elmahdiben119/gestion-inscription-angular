@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <i class="fa fa-university" aria-hidden="true"></i>
+    Registration Management
+  </a>
+</nav>
+<div class="container">
+  <div class="container-fluid">
+    <div class="form row">
+      <div class="col-md-4"></div>
+      <div class="authframe col-md-4">
+        <h3><i class="fa fa-connectdevelop" aria-hidden="true"></i> Authentification</h3><br>
+        <div class="form-group">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+          <label for="username">&nbsp;Username</label>
+          <input type="tel" class="form-control" name="username" id="username" aria-describedby="username"
+            placeholder="username" [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          <label for="password">&nbsp;Password</label>
+          <input type="password" class="form-control" name="password" id="password" placeholder="password"
+            [(ngModel)]="password">
+        </div>
+        <button type="button" class="btn btn-outline-primary float-left" (click)="Connecting()">Connect</button>
+        <button type="button" routerLink="/Signup" class="btn btn-outline-danger float-right">Sign-up</button>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+</div>

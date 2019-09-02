@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-sm navbar navbar-light bg-light master-detail">
+  <a class="navbar-brand" href="/Parent">
+    <i class="fa fa-university" aria-hidden="true"></i>
+    Registration Management
+  </a>
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Parent" routerLinkActive="active">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Parent/Childs" routerLinkActive="active">Childs</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mt-2 mt-lg-0">
+      <div class="dropdown  dropleft">
+        <button class="btn bg-light dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="triggerId">
+          <div class="dropdown-item">
+            &nbsp;&nbsp;<i class="fa fa-user-o" aria-hidden="true"></i>
+            <a class="btn" routerLink="/Parent/myaccount" routerLinkActive="active" style="font-size: 12px">
+              My Account <span class="badge badge-primary"></span>
+            </a>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-item">
+            &nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i>
+            <button class="btn" style="font-size: 12px" (click)="logout()">
+              Logout <span class="badge badge-primary"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,6 @@
+.authframe {
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 2px 2px;
+  padding: 50px;
+}
